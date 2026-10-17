@@ -67,5 +67,21 @@ hl.config({
   input = {
     -- Enable CAPS-LOCK BEHAVIOUR:
     kb_options = "compose:ralt",
+    touchpad = {
+      -- Use natural (inverse) scrolling.
+      natural_scroll = false,
+
+      -- Use two-finger clicks for right-click instead of lower-right corner.
+      clickfinger_behavior = false,
+
+      -- Control the speed of your scrolling.
+      scroll_factor = 0.4,
+
+      -- Enable the touchpad while typing.
+      disable_while_typing = false,
+
+      -- Left-click-and-drag with three fingers.
+      drag_3fg = 1,
+    },
   },
 })
