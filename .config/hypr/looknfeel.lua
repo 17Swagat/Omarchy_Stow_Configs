@@ -4,9 +4,9 @@
 hl.config({
     general = {
         -- No gaps between windows or borders.
-        gaps_in = 2,
-        gaps_out = 5,
-        border_size = 2,
+        gaps_in = 1,
+        gaps_out = 1,
+        border_size = 3,
 
         -- Change to niri-like side-scrolling layout.
         layout = "scrolling",
@@ -62,3 +62,8 @@ hl.config({
 --     column_width = 0.97,
 --   },
 -- })
+
+-- Opt another application in to Omarchy's standard transparency.
+-- Find its class with: hyprctl clients
+-- o.transparent_window("my-app")
+-- o.transparent_window("my-app", "0.9 0.85") -- Custom active/inactive opacity.
